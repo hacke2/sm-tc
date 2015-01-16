@@ -59,7 +59,7 @@ function getJsFileName() {
 }
 
 function createTpl() {
-	fs.readFile(htmlFileName,{encoding:'utf-8'}, function(err, data){
+	fs.readFile(htmlFileName + '.html',{encoding:'utf-8'}, function(err, data){
 		if(err && err.errno == '34'){
 			console.log('路径错误!');
 		}else if(data){ 
